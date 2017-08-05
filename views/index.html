@@ -2,7 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <!-- bootstrap and ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href="stylesheets/style.css" rel="stylesheet" />
 
@@ -21,12 +25,39 @@
         <div class="container">
         </div>
     </div>
-
-    <div class="container">
-
-        <h1>{{ title }}</h1>
-
+    <div class="centerDisplay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="square cpIcon orangeIcon icon">
+                        <h1 class="iconText">{{ me.firstName[0] + me.lastName[0] }}</h1>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>
+                                {{ me.firstName + " " + me.middleName[0] + " " + me.lastName | uppercase }}
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>
+                                {{ me.occupation | uppercase }}
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+            <h1>{{ title }}</h1>
+        </div>
     </div>
+
 </div>
 
 <div class="footer">

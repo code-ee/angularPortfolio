@@ -15,10 +15,37 @@ a {
 
 .leftDec {
     left: 0;
-    bottom: 10%;
+    bottom: 15%;
 }
 
 .rightDec {
     right: 0;
-    top: 10%;
+    top: 15%;
+}
+
+.centerDisplay {
+    margin: 0 auto;
+}
+
+.orangeIcon {
+    background-color: #E95420;
+}
+
+.icon {
+    text-align: center;
+}
+
+.iconText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    border-radius: 100%;
 }
