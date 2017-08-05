@@ -1,15 +1,18 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    fs.readFile('index.html', function (err, data){
+    fs.readFile(path.join(__dirname, '..', 'views', 'index.html'), function (err, data){
+        var html = data.toString();
         res.writeHead(200, {
             'Content-Type': 'text/html',
-            'Content-Length': data.size
+            'Content-Length': html.length
         });
-        res.write(data);
+
+        res.write(html);
         res.end();
     });
 });

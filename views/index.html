@@ -1,10 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Include the AngularJS library (first cdn, then local) -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--<script src="javascripts/shared/angular_1.6.4.min.js"></script>-->
 </head>
-<body>
-    <h1>Express</h1>
+<body ng-app="portfolio">
+<div class="header">
+    <div class="container">
+    </div>
+</div>
+
+<div class="main" ng-controller="MainController">
+    <div class="container">
+
+        <h1>{{ title }}</h1>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+    </div>
+</div>
+
+
+<!-- Modules -->
+<script src="javascripts/angularApp.js"></script>
+
+<!-- Controllers -->
+<script src="javascripts/controllers/mainController.js"></script>
+
 </body>
 </html>
