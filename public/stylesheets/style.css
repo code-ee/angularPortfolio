@@ -1,8 +1,24 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #2B2B2B;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
+}
+
+.dec {
+    position: absolute;
+}
+
+.leftDec {
+    left: 0;
+    bottom: 10%;
+}
+
+.rightDec {
+    right: 0;
+    top: 10%;
 }

@@ -1,21 +1,27 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="stylesheets/style.css" rel="stylesheet" />
 
     <!-- Include the AngularJS library (first cdn, then local) -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <!--<script src="javascripts/shared/angular_1.6.4.min.js"></script>-->
 </head>
 <body ng-app="portfolio">
-<div class="header">
-    <div class="container">
-    </div>
-</div>
 
 <div class="main" ng-controller="MainController">
+    <div ng-repeat="t in decor.tri">
+        <img class="{{ t.classDef }}" ng-src="{{ t.path }}" alt="{{ t.alt }}">
+    </div>
+
+    <div class="header">
+        <div class="container">
+        </div>
+    </div>
+
     <div class="container">
 
         <h1>{{ title }}</h1>
