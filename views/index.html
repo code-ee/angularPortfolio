@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <!-- bootstrap and ajax-->
+    <!--bootstrap and ajax-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <!--google fonts: lato-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--local styling-->
     <link href="stylesheets/style.css" rel="stylesheet" />
-
-    <!-- Include the AngularJS library (first cdn, then local) -->
+    <!--Include the AngularJS library (cdn, local)-->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <!--<script src="javascripts/shared/angular_1.6.4.min.js"></script>-->
 </head>
@@ -21,55 +22,50 @@
         <img class="{{ t.classDef }}" ng-src="{{ t.path }}" alt="{{ t.alt }}">
     </div>
 
-    <div class="header">
+    <div class="centerDisplayContainer">
         <div class="container">
-        </div>
-    </div>
-    <div class="centerDisplay">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
+            <div class="row verticalAlign centerDisplay">
+                <div class="col-md-2 border">
                     <div class="square cpIcon orangeIcon icon">
-                        <h1 class="iconText">{{ me.firstName[0] + me.lastName[0] }}</h1>
+                        <div class="iconText bigIconText">{{ me.firstName[0] + me.lastName[0] }}</div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1>
-                                {{ me.firstName + " " + me.middleName[0] + " " + me.lastName | uppercase }}
-                            </h1>
-                        </div>
+                <div class="col-md-10 nameTitle border">
+                    <div class="bigName">
+                        {{ me.firstName + " " + me.middleName[0] + " " + me.lastName | uppercase }}
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1>
-                                {{ me.occupation | uppercase }}
-                            </h1>
-                        </div>
+                    <div class="orangeText occupation">
+                        {{ me.occupation | uppercase }}
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mainSocialNav">
                 <div class="col-md-12">
+                    <nav>
+                        <a class="mainSocialNavLink" href="https://github.com/code-ee" target="_blank">GitHub</a>
+                        <a class="mainSocialNavLink" href="https://www.linkedin.com/in/cody-t-patterson/" target="_blank">LinkedIn</a>
+                        <a class="mainSocialNavLink" href="https://twitter.com/codytpatterson" target="_blank">Twitter</a>
+                        <a class="mainSocialNavLink" href="#" target="_blank">Email</a>
+                    </nav>
                 </div>
             </div>
-            <h1>{{ title }}</h1>
         </div>
     </div>
+
 
 </div>
 
+<!--footer-->
 <div class="footer">
     <div class="container">
     </div>
 </div>
 
 
-<!-- Modules -->
+<!--Modules-->
 <script src="javascripts/angularApp.js"></script>
 
-<!-- Controllers -->
+<!--Controllers-->
 <script src="javascripts/controllers/mainController.js"></script>
 
 </body>

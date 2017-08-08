@@ -1,12 +1,8 @@
 body {
     padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #FFFFFF;
     background-color: #2B2B2B;
-}
-
-a {
-    color: #00B7FF;
 }
 
 .dec {
@@ -15,7 +11,7 @@ a {
 
 .leftDec {
     left: 0;
-    bottom: 15%;
+    bottom: 10%;
 }
 
 .rightDec {
@@ -23,16 +19,69 @@ a {
     top: 15%;
 }
 
+.centerDisplayContainer {
+    position:relative;
+    top: 37vh;
+}
+
+.mainSocialNav {
+    margin-left: 115px;
+    transform: translateY(-10px);
+}
+
+.mainSocialNavLink {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #555555;
+}
+
 .centerDisplay {
-    margin: 0 auto;
+    width: 870px;
+    height: 150px;
+    bottom: 0;
+    /*border: dotted white 1px;*/
+}
+
+.nameTitle {
+    /*position:relative;*/
+    /*top:0;*/
+}
+
+.bigName {
+    letter-spacing: 1px;
+    font-size: 4em;
+}
+
+.border {
+    /*border: dotted blue 1px;*/
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.occupation {
+    letter-spacing: 1px;
+    font-size: 1.6em;
+}
+
+.orangeText {
+    color: #D65147;
 }
 
 .orangeIcon {
-    background-color: #E95420;
+    background-color: #D65147;
+}
+
+.bigIconText {
+    font-size: 4.5em;
 }
 
 .icon {
+    letter-spacing: 5px;
     text-align: center;
+    /*margin: 5px;*/
 }
 
 .iconText {
@@ -42,8 +91,8 @@ a {
 }
 
 .square {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 .circle {
